@@ -1,78 +1,6 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Vue Eye Clinic</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-  </head>
-
-<body>
-    <img id="logo" src="img/VueEyeLogo.png" width="200" alt="Logo"></img>
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid col-md-12">
-        
-        <div id="navbar" class="navbar-collapse collapse navbar-static-top visible-xs-block">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#about">Eye Care Services</a></li>
-            <li><a href="#about">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class= "pull-right"><a class="fa fa-facebook-official" style="font-size:36px" href="https://www.facebook.com/VueEyeClinic/?fref=ts"></a></li>
-            </li>
-          </ul>
-          
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    
-<!--img slider-->
-
-<div class="image" id="images">
-  <img id="image1" src="img/VueEyeLogo.png" ></img>
-  <img id="image2" src="http://i.imgur.com/qASVX.jpg" ></img>
-  <img id="image3" src="http://i.imgur.com/fLuHO.jpg" ></img>
-  <img id="image4" src="http://i.imgur.com/5Sd3Q.jpg" ></img>
-</div>
-<div id="slider">
-  <a href="#image1">1</a>
-  <a href="#image2">2</a>
-  <a href="#image3">3</a>
-  <a href="#image4">4</a>
-</div>
-
-
-         
-<intro>
-
-        <p class="lead">
-          Mission Statement: "Improving vision health through prevention, detection, and treatment at affordable prices."
-        </p>
-        
-        <div class="col-lg-12 header">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-</intro>
-    
-<<<<<<< HEAD
+body{
+    text-align: center;
 }
-
 #logo {
     display: block;
     margin: 20px auto;
@@ -140,101 +68,52 @@ intro .header{
 }
 
 .img{
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 250px;
 }
 /*image slider*/
 
 #images {
-  width: 800px;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  
-  margin: 20px auto;
+    width: 600px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+
 }
+
 #images img {
-  width: 800px;
-  height: 400px;
+    width: 600px;
+    height: 250px;
   
-  position: absolute;
-  top: 0;
-  left: -400px;
-  z-index: 1;
-  opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
   
-  transition: all linear 500ms;
-  -o-transition: all linear 500ms;
-  -moz-transition: all linear 500ms;
-  -webkit-transition: all linear 500ms;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
 }
 #images img:target {
-  left: 0;
-  z-index: 9;
-  opacity: 1;
+    left: 0;
+    z-index: 9;
+    opacity: 1;
 }
 #images img:first-child {
-  left: 0;
-  opacity: 1;
+    left: 0;
+    opacity: 1;
 }
 #slider a {
-  text-decoration: none;
-  background: #E3F1FA;
-  border: 1px solid #C6E4F2;
-  padding: 4px 6px;
-  color: #222;
+    text-decoration: none;
+    background: #E3F1FA;
+    border: 1px solid #C6E4F2;
+    padding: 4px 6px;
+    color: #222;
 }
 #slider a:hover {
-  background: #C6E4F2;
+    background: #C6E4F2;
 }
-=======
-    
-<!--    card columns-->
 
-<div class="container">
-      <div class="row">
-        <div class="card col-xs-3 col-sm-3">
-            <h3 class="card-title">One of three columns</h3>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card col-xs-3 col-sm-3">
-          <h3 class="card-title">One of three columns</h3>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card col-xs-3 col-sm-3">
-          <h3 class="card-title">One of three columns</h3>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-
-          <div class="card col-xs-3 col-sm-3">
-          <h3 class="card-title">One of three columns</h3>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-  
-    </div>
-</div>
-
-
-
-</body>
-
-<!--    footer-->
-    <footer class="footer  ">
-
-      <div class="info-footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-        Vue Eye Clinic<br>
-        1165 Arcade Street<br>
-        St. Paul, MN 55106<br>
-        P: 651-414-0428<br>
-        F: 651-414-0753</br>
-
-      </div>
-
-    </footer>
-
-
-  
-
-</html>
->>>>>>> origin/gh-pages
