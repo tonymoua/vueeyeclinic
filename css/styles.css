@@ -1,165 +1,121 @@
-body{
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Vue Eye Clinic</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  </head>
+
+<body>
+    <img id="logo" src="img/VueEyeLogo.png" width="200" alt="Logo"></img>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid col-md-12">
+        
+        <div id="navbar" class="navbar-collapse collapse navbar-static-top visible-xs-block">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Eye Care Services</a></li>
+            <li><a href="#about">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class= "pull-right"><a class="fa fa-facebook-official" style="font-size:36px" href="https://www.facebook.com/VueEyeClinic/?fref=ts"></a></li>
+            </li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     
-}
+<!--img slider-->
 
-#logo {
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-#navbar-primary.navbar-default {
-  background: transparent;
-  border: none;
-}
-
-.navbar-nav { 
-    width: 100%;
-    text-align: center;
-    > li {
-      display: inline-block;
-      float: none;
-      > a {
-        padding-left: 30px;
-        padding-right: 30px;
-        }
-    }
-  }
-
-/*footer*/
-.footer{
-    width:100%; 
-    height:50px; 
-    text-align: center;
-
-}
-
-/*facebook icon*/
+<div class="image" id="images">
+  <img id="image1" src="img/VueEyeLogo.png" ></img>
+  <img id="image2" src="http://i.imgur.com/qASVX.jpg" ></img>
+  <img id="image3" src="http://i.imgur.com/fLuHO.jpg" ></img>
+  <img id="image4" src="http://i.imgur.com/5Sd3Q.jpg" ></img>
+</div>
+<div id="slider">
+  <a href="#image1">1</a>
+  <a href="#image2">2</a>
+  <a href="#image3">3</a>
+  <a href="#image4">4</a>
+</div>
 
 
-/*intro-welcome*/
-.lead{
-    font-color: #3a3a3a;
-    padding-top: 65px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
-    text-align: center;
-}
+         
+<intro>
 
-intro .header{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align: center;
-    padding: 10px 0px;
-}
+        <p class="lead">
+          Mission Statement: "Improving vision health through prevention, detection, and treatment at affordable prices."
+        </p>
+        
+        <div class="col-lg-12 header">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+</intro>
+    
+    
+<!--    card columns-->
 
-.info-footer{
-    padding: 10px 0px;
-    background: rgba(0,0,0,0.2);
-    font-size: 12px;
-    font-weight: 300
-}
-/*cards - different services*/
-.card{
-    padding-bottom: 15px;
-}
+<div class="container">
+      <div class="row">
+        <div class="card col-xs-3 col-sm-3">
+            <h3 class="card-title">One of three columns</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card col-xs-3 col-sm-3">
+          <h3 class="card-title">One of three columns</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card col-xs-3 col-sm-3">
+          <h3 class="card-title">One of three columns</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
 
-/*logo*/
-.img{
-    width: 800px;
-    height: 400px;
-}
-/*image slider*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.slider {
-  display: block;
-  width: 900px;
-  height: 450px;
-  margin: 0px auto;
-  margin-top: 3%;
-  position: relative;
-}
-
-.slider .img {
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-}
-
-.innerslider {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.sliderin{
-  list-style: none;
-  height: 100%;
-  width: 400%;
-  left: 0px;
-  position: relative;
-  transition: left .8s;
-}
-
-.sliderin .sliderimg{
-  height: 400px;
-  width: 25%;
-  float: left;
-  position: relative;
-}
+          <div class="card col-xs-3 col-sm-3">
+          <h3 class="card-title">One of three columns</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+  
+    </div>
+</div>
 
 
-.slider input[type="radio"] {
-  position: absolute;
-  margin: 0 auto;
-  visibility: hidden;
-  z-index: 100;
-}
 
-.slider label {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  left: 50%;
-  z-index: 100;
-  border-radius: 50%;
-  bottom: -45px;
-}
+</body>
 
-.slider input[type=radio]#control1:checked~.innerslider .sliderin {
-  left: 0
-}
+<!--    footer-->
+    <footer class="footer  ">
 
-.slider input[type=radio]#control2:checked~.innerslider .sliderin {
-  left: -100%
-}
+      <div class="info-footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-.slider input[type=radio]#control3:checked~.innerslider .sliderin {
-  left: -200%
-}
+        Vue Eye Clinic<br>
+        1165 Arcade Street<br>
+        St. Paul, MN 55106<br>
+        P: 651-414-0428<br>
+        F: 651-414-0753</br>
 
-.slider input[type=radio]#control4:checked~.innerslider .sliderin {
-  left: -300%
-}
+      </div>
 
-.slider label[for=control1] {
-  margin-left: -36px;
-}
+    </footer>
 
-.slider label[for=control2] {
-  margin-left: -18px;
-}
 
-.slider label[for=control3] {
-  margin-left: 0px;
-}
+  
 
-.slider label[for=control4] {
-  margin-left: 18px;
-}
+</html>
