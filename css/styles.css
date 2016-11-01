@@ -2,7 +2,6 @@ body{
     text-align: center;
 }
 
-
 div{
     display: block;
 }
@@ -60,9 +59,19 @@ intro .header{
 /*cards - different services*/
 
 .card{
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
+/*Request Button*/
+.button{
+    padding: 15px 0px; 
+}
+
+/*Head- Picture*/
+.header-pic{
+    padding: 20px 0px;
+}
 /*logo*/
 
 /*timed slideshow*/
